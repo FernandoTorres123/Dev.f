@@ -1,6 +1,9 @@
 *{
     outline: 1px solid black;
 }
+.main{
+  margin: 0;
+}
 
 .container {
     display: grid;
@@ -10,6 +13,7 @@
         "content sidebar"
         "footer footer";
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: center;
     /* grid-gap: 20px;x  */
@@ -17,29 +21,47 @@
 
   }
   
-  header {
+  .header {
     grid-area: header;
     border: 1px solid black;
     justify-content: center;
     align-items: center;
+    background-color: aqua;
+    height: 50px;
   }
 
-  nav{
+  .nav{
+    height: 50px;
     grid-area: nav;
+    background-color: red;
   }
   
-  article {
+  .section {
     grid-area: content;
     justify-content: center;
     align-items: center;
+    height: 250px;
+  }
+
+  .section2{
+    height: 50px;
+    background-color: beige;
+  }
+
+  .article{
+    height: 200px;
+    background-color: brown;
   }
   
-  aside {
-    justify-content: center;
-    align-items: center;
+  .aside {
+    align-self: center;
     grid-area: sidebar;
+    height: 250px;
+    background-color: rebeccapurple;
   }
   
-  footer {
+  .footer {
+    height: 50px;
     grid-area: footer;
+    background-color: aliceblue;
   }
